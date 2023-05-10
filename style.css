@@ -1,0 +1,373 @@
+/*
+the colors that we need!
+
+white color: #efefef;
+grey color: #e7e3e0;
+grey'isch color: #dbd4cf;
+gold color: #d7b037;
+red color: #6b2428;
+bordeaux red color: #331014;
+
+*/
+
+/*for start we set the hole page with font, style and color*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+/*body arangement and color*/
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: block;
+  background-color: #dbd4cf;
+}
+
+main {
+  background-color: #e7e3e0;
+}
+
+/*header and logo adjustment*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #331014;
+  padding: 15px 0;
+  font-size:25px;
+  font-weight: bold;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+header li {
+  display: inline;
+  padding: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #d7b037;
+  padding: 15px;
+}
+
+header a:hover {
+  background-color: #d7b037;
+  color: #6b2428;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/*top-page with the wine bottle in the background*/
+
+.top-site {
+  position: relative;
+  background-image: url(../bilder/desktop-img.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  top: 40%;
+  align-items: center;
+  line-height: 1.6;
+  color: #d7b037;
+  
+}
+
+.top-site h1 {
+  position: absolute;
+  top: 35%;
+  margin: 0 50px;
+}
+
+.top-site a {
+  position: absolute;
+  display: block;
+  background-color: #331014;
+  margin: 20px 0 0 50px;
+  padding: 10px 30px;
+  top: 50%;
+  color: #d7b037;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.top-site a:hover {
+  background-color: #d7b037;
+  color: #331014;
+  font-weight: bold;
+  transition: 1s;
+}
+
+/*section with the subscription link which takes you to Wine-Abo page*/
+
+.content h1 {
+  display: block;
+  text-align: center;
+  padding: 40px;
+}
+
+.abo {
+  margin: 50px;
+  border: 2px solid black;
+  overflow: auto;
+}
+
+.events {
+  margin: 50px;
+  border: 2px solid black;
+  overflow: auto;
+}
+
+.abo a,
+.events a {
+  color: #d7b037;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #6b2428;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*section with the events link which takes you to events page*/
+
+
+/*link to instagram */
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram a {
+  color: #331014;
+  text-decoration: none;
+}
+
+/*sign up for newsletter*/
+
+.newsletter {
+  display: block;
+  text-align: center;
+  padding: 50px;
+}
+
+.btn a {
+  background-color: #6b2428;
+  color: #d7b037;
+  text-align: center;
+}
+
+/*site-footer with impressum link*/
+
+footer {
+  align-items: center;
+}
+
+.seitefooter {
+  background-color: #6b2428;
+  padding: 15px;
+}
+
+.seitefooter li {
+  display: inline;
+  padding: 10px;
+  color: #d7b037;
+}
+
+.seitefooter a {
+  text-decoration: none;
+  color: #d7b037;
+}
+
+.seitefooter a:hover {
+  background-color: #d7b037;
+  color: #6b2428;
+  border-radius: 5px;
+  padding: 2px;
+  transition: 0.5s;
+}
+
+/*---Abonnieren---*/
+#price {
+  background-color: #6b2428;
+  color: #d7b037;
+  padding: 0 15px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+}
+
+.eventlinktokontakt {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.eventlinktokontakt button {
+  background-color: #6b2428;
+  color: #d7b037;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.eventlinktokontakt a:hover {
+  background-color: #d7b037;
+  color: #6b2428;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.eventlinktokontakt > .name,
+.eventlinktokontakt > #price,
+.eventlinktokontakt > .weiter {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*---produkte---*/
+
+.prod {
+  display: block;
+  padding: 4em;
+  padding-top: 0;
+}
+
+.prod h1 {
+  text-align: center;
+  padding: 3em;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.product p {
+  display: none;
+  background-color: #6b2428;
+}
+
+/*here you have to go over the bottle to see the description*/
+
+.product:hover p {
+  display: block;
+}
+
+/*---events---*/
+
+.events {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.event {
+  text-align: center;
+}
+
+.event1,
+.event2,
+.event3 {
+  padding: 50px;
+}
+
+/*--- contact ---*/
+
+.formular h1 {
+  text-align: center;
+  padding: 25px;
+}
+
+/*
+the colors that we need!
+
+white color: #efefef;
+grey color: #e7e3e0;
+grey'isch color: #dbd4cf;
+gold color: #d7b037;
+red color: #6b2428;
+bordeaux red color: #331014;
+*/
+
+.kontakt {
+  display: block;
+  background-color: #efefef;
+  border: 6px solid #d7b037;
+  border-radius: 15px;
+  width: 700px;
+  padding: 1rem;
+  margin: 15px auto;
+}
+
+.kontakt div {
+  margin-bottom: 1rem;
+}
+
+.kontakt label[for]{
+  display: block;
+}
+input, textarea {
+  width: 100%;
+  border: none;
+}
+
+.kontakt textarea {
+  font-size: 15px;
+  border: 1px solid #CEE1E8;
+}
+
+.kontakt input:hover {
+  border: 1px solid #6b2428;
+  background-color: lightgoldenrodyellow;
+}
+
+.kontakt textarea:hover {
+  border: 1px solid #6b2428;
+  background-color: lightgoldenrodyellow;
+
+}
+
+.btncontact {
+  margin-right: 25px;
+  text-align: right;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  background-color: #6b2428;
+  color: #d7b037;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d7b037;
+  color: #6b2428;
+  font-weight: bold;
+}
