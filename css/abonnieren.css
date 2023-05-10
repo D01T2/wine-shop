@@ -1,0 +1,35 @@
+#price {
+  background-color: #6b2428;
+  color: #d7b037;
+  padding: 0 15px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+}
+
+.eventlinktokontakt {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.eventlinktokontakt button {
+  background-color: #6b2428;
+  color: #d7b037;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.eventlinktokontakt a:hover {
+  background-color: #d7b037;
+  color: #6b2428;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.eventlinktokontakt > .name,
+.eventlinktokontakt > #price,
+.eventlinktokontakt > .weiter {
+  padding: 10px;
+  margin: 10px;
+}
