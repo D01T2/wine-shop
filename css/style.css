@@ -52,6 +52,12 @@ header {
   background-color: #331014;
 }
 
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 .logo {
   padding-left: 30px;
 }
@@ -136,6 +142,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  opacity: 0.7;
 }
 
 .abobody p {
@@ -145,6 +152,10 @@ header {
 
 .abobody img {
   height: 400px;
+}
+
+.abobody:hover {
+  opacity: 1;
 }
 
 .abobody a {
@@ -167,6 +178,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  opacity: 0.7;
 }
 
 .events p {
@@ -185,6 +197,10 @@ header {
   background-color: #6b2428;
   padding: 5px;
   border-radius: 10px;
+}
+
+.events:hover {
+  opacity: 1;
 }
 
 /*link to instagram */
