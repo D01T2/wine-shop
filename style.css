@@ -38,6 +38,12 @@ main {
 
 /*for all the link I made them the same*/
 
+h2 {
+  text-align: center;
+  padding: 25px;
+}
+
+
 a,
 a:link,
 a:active,
@@ -135,7 +141,6 @@ nav li {
 
 .contenttxt h2, 
 .contenttxt p {
-  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -198,53 +203,46 @@ nav li {
   margin: 0 auto 35px;
 }
 
-          /*---===|||===---untill here is the first page---===|||===---*/
+/*-----------------------------------------------*/
 
-
-          /*-----------------page no.2 Abonnieren----------------------*/
-
-/*
-.abo h2 {
+.subscription {
+  display: block;
   text-align: center;
+  margin: 25px;
 }
 
-#price {
-  background-color: #6b2428;
-  color: #d7b037;
-  padding: 0 15px;
+.subscription img {
+  float: left;
+}
+
+.abonnieren {
+  display: inline;
+  margin: auto;
+  font-weight: bold;
+}
+
+.name {
+  margin: 25px;
+  padding: 10px 25px;
   border: none;
-  border-radius: 10px;
-  display: flex;
 }
 
-.eventlinktokontakt {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  color: #d7b037;
-}
-
-.eventlinktokontakt button {
-  background-color: #6b2428;
-  color: #d7b037;
-  padding: 5px 20px;
-  border-radius: 10px;
-}
-
-.eventlinktokontakt a:hover {
-  background-color: #d7b037;
-  color: #6b2428;
-  padding: 5px 20px;
-  border-radius: 10px;
-}
-
-.eventlinktokontakt > .name,
-.eventlinktokontakt > #price,
-.eventlinktokontakt > .weiter {
+.abonnieren button {
+  font-weight: bold;
   padding: 10px;
-  margin: 10px;
+  margin: 25px;
+  background-color: #331014;
+  color: #d7b037;
+  border-radius: 10px;
+  border: none; 
 }
 
+.abonnieren button:hover {
+  font-weight: bold;
+  background-color: #d7b037;
+  color: #331014;
+}
+/*---------------------------------------------------*/
 
 /*---products---*/
 /*
