@@ -47,6 +47,7 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  border: none;
   border-radius: 5px;
   background-color: #331014;
   color: #d7b037;
@@ -58,6 +59,7 @@ a:focus {
   font-weight: bold;
   background-color: #d7b037;
   color: #331014;
+  border: none;
   border-radius: 5px;
   transition: 0.5s;
 }
