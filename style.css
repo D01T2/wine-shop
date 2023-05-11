@@ -186,14 +186,24 @@ header a:hover {
   border-radius: 10px;
 }
 
-.follow button {
+.newsletter button {
   font-size: 15px;
   font-weight: bold;
+  padding: 20px;
   margin-bottom: 50px;
   border: none; /* for the button underneath to be invisible */
 }
 
 /*----sign up for newsletter----*/
+.newsletter > input {
+  max-width: 150px;
+  margin: 0 0 20px 0;
+}
+
+.newsletter > label {
+  display: inline-block;
+  padding: 80px;
+}
 
 .newsletter {
   display: block;
@@ -203,7 +213,7 @@ header a:hover {
 
 /*-----site-footer with impressum link-----*/
 
-.site-footer {
+footer {
   align-items: center;
   background-color: #331014;
   padding: 15px;
@@ -211,19 +221,19 @@ header a:hover {
   font-weight: bold;
 }
 
-.site-footer li {
+footer li {
   display: inline;
   padding: 10px;
   color: #d7b037;
 }
 
-.site-footer a {
+footer a {
   text-decoration: none;
   color: #d7b037;
   padding: 15px;
 }
 
-.site-footer a:hover {
+footer a:hover {
   background-color: #d7b037;
   color: #6b2428;
   border-radius: 5px;
