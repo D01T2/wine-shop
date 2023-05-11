@@ -36,9 +36,41 @@ main {
   background-color: #e7e3e0;
 }
 
-/*-----header and logo adjustment-----*/
+/*for all the link I made them the same*/
 
-header {
+a,
+a:link,
+a:active,
+a:visited {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  background-color: #331014;
+  color: #d7b037;
+  padding: 15px;
+}
+
+a:hover,
+a:focus {
+  font-weight: bold;
+  background-color: #d7b037;
+  color: #331014;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/*-----logo, header and footer adjustment-----*/
+
+.logo {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+header,
+footer {
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -46,34 +78,22 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   background-color: #331014;
+  color: #d7b037;
   padding: 15px 0;
-  font-size:25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.logo {
-  padding-left: 30px;
-}
+/* we use <nav> because both lists are the same header and footer */
 
-header li {
+nav li {
   display: inline;
   padding: 10px;
 }
 
-header a {
-  text-decoration: none;
-  color: #d7b037;
-  padding: 15px;
-}
-
-header a:hover {
-  background-color: #d7b037;
-  color: #6b2428;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
+/*-----------------------------------------------------*/
 /*---top-page with the wine bottle in the background---*/
+/*-----------------------------------------------------*/
 
 .top-site {
   position: relative;
@@ -82,14 +102,12 @@ header a:hover {
   background-position: center;
   min-height: 60vh;
   top: 40%;
-  align-items: center;
-  line-height: 1.6;
-  color: #d7b037;
-  
 }
 
 .top-site h1 {
   position: absolute;
+  line-height: 2;
+  color: #d7b037;
   top: 35%;
   margin: 0 50px;
 }
@@ -97,154 +115,93 @@ header a:hover {
 .top-site a {
   position: absolute;
   display: block;
-  background-color: #331014;
   margin: 20px 0 0 50px;
   padding: 10px 30px;
   top: 50%;
-  color: #d7b037;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  border-radius: 5px;
 }
 
-.top-site a:hover {
-  background-color: #d7b037;
-  color: #331014;
-  font-weight: bold;
-  transition: 1s;
-}
+/*-----------------------------------------------------*/
+/*---section with the subscription link and the events link which takes you to Wine-Abo / events  page---*/
+/*-----------------------------------------------------*/
 
-/*---section with the subscription link which takes you to Wine-Abo page---*/
-/*------section with the events link which takes you to events page--------*/
-.abo,
-.events {
+.content {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   margin-top: 50px;
 }
 
-.abo img {
-  float: right;
-}
-
-.event img {
-  float: left;
-}
-
-.abotxt h2, 
-.abotxt p,
-.event h2,
-.event p {
+.contenttxt h2, 
+.contenttxt p {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.abotxt a,
-.event a {
+.contenttxt a {
   display: block;
-  text-align: center;
   margin: 20px 180px;
   padding: 10px 30px;
   top: 50%;
-  color: #331014;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  border-radius: 5px;
 }
 
-.abotxt a:hover,
-.event a:hover {
-  background-color: #331014;
-  color: #d7b037;
-  font-weight: bold;
-  transition: 1s;
-}
+/*-----------------------------------------------------*/
+/*-------------------link to instagram-----------------*/
+/*-----------------------------------------------------*/
 
-/*----link to instagram-----*/
-
-.follow {
+.socialmedia {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 100px;
 }
 
-.follow a {
-  background-color: #331014;
-  color: #d7b037;
-  text-decoration: none;
-  padding: 10px;  
-  border-radius: 10px;
-}
-
-.newsletter button {
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  margin-bottom: 50px;
-  border: none; /* for the button underneath to be invisible */
-}
-
-/*----sign up for newsletter----*/
-.newsletter > input {
-  max-width: 150px;
-  margin: 0 0 20px 0;
-}
-
-.newsletter > label {
-  display: inline-block;
-  padding: 80px;
+/*
+-here we have a smaller padding for the instagram link (button) from the rest.
+-the rest the link will inherit from the main.
+*/
+.socialmedia a {
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 25px;
 }
 
 .newsletter {
   display: block;
   text-align: center;
-  padding: 50px;
+  margin-bottom: 25px;
 }
 
-/*-----site-footer with impressum link-----*/
-
-footer {
-  align-items: center;
-  background-color: #331014;
-  padding: 15px;
+.newsletter h4 {
   font-size: 20px;
-  font-weight: bold;
+  margin-top: 25px;
 }
 
-footer li {
-  display: inline;
-  padding: 10px;
+.newsletter > label {
+  display: inline-block;
+  margin: 35px 0;
+}
+
+.newsletter > input {
+  max-width: 200px;
+  border: none;
+}
+
+.newsletter button {
+  display: block;
+  font-size: 20px;
+  background-color: #331014;
   color: #d7b037;
-}
-
-footer a {
-  text-decoration: none;
-  color: #d7b037;
-  padding: 15px;
-}
-
-footer a:hover {
-  background-color: #d7b037;
-  color: #6b2428;
   border-radius: 5px;
-  transition: 0.5s;
+  padding: 0 7px;
+  margin: 0 auto 35px;
 }
+
 /*---===|||===---untill here is the first page---===|||===---*/
 
 
 
 /*---Subscription---*/
-
+/*
 .abo h2 {
   text-align: center;
 }
@@ -288,7 +245,7 @@ footer a:hover {
 
 
 /*---products---*/
-
+/*
 .prod {
   display: block;
   padding: 4em;
@@ -313,7 +270,7 @@ footer a:hover {
 
 
 /*--- contact ---*/
-
+/*
 .formular h1 {
   text-align: center;
   padding: 25px;
@@ -329,7 +286,7 @@ gold color: #d7b037;
 red color: #6b2428;
 bordeaux red color: #331014;
 */
-
+/*
 .kontakt {
   display: block;
   background-color: #efefef;
@@ -389,3 +346,4 @@ input, textarea {
   color: #6b2428;
   font-weight: bold;
 }
+
