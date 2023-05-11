@@ -10,7 +10,7 @@ bordeaux red color: #331014;
 
 */
 
-/*-----for start we set the hole page with font, style and color------*/
+          /*-----for start we set the hole page with font, style and color------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
@@ -23,7 +23,7 @@ bordeaux red color: #331014;
   
 }
 
-/*-----body arangement and color-----*/
+          /*-----body arangement and color-----*/
 
 body {
   margin: 0 auto;
@@ -62,7 +62,7 @@ a:focus {
   transition: 0.5s;
 }
 
-/*-----logo, header and footer adjustment-----*/
+          /*-----logo, header and footer adjustment-----*/
 
 .logo {
   padding-left: 20px;
@@ -91,9 +91,9 @@ nav li {
   padding: 10px;
 }
 
-/*-----------------------------------------------------*/
-/*---top-page with the wine bottle in the background---*/
-/*-----------------------------------------------------*/
+          /*-----------------------------------------------------*/
+          /*---top-page with the wine bottle in the background---*/
+          /*-----------------------------------------------------*/
 
 .top-site {
   position: relative;
@@ -120,9 +120,9 @@ nav li {
   top: 50%;
 }
 
-/*-----------------------------------------------------*/
+          /*-----------------------------------------------------*/
 /*---section with the subscription link and the events link which takes you to Wine-Abo / events  page---*/
-/*-----------------------------------------------------*/
+          /*-----------------------------------------------------*/
 
 .content {
   display: flex;
@@ -144,9 +144,9 @@ nav li {
   top: 50%;
 }
 
-/*-----------------------------------------------------*/
-/*-------------------link to instagram-----------------*/
-/*-----------------------------------------------------*/
+          /*-----------------------------------------------------*/
+          /*-------------------link to instagram-----------------*/
+          /*-----------------------------------------------------*/
 
 .socialmedia {
   margin-top: 100px;
@@ -196,11 +196,11 @@ nav li {
   margin: 0 auto 35px;
 }
 
-/*---===|||===---untill here is the first page---===|||===---*/
+          /*---===|||===---untill here is the first page---===|||===---*/
 
 
+          /*-----------------page no.2 Abonnieren----------------------*/
 
-/*---Subscription---*/
 /*
 .abo h2 {
   text-align: center;
