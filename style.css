@@ -376,7 +376,7 @@ input, textarea {
 .impressum a {
   font-size: initial;
   font-weight: initial;
-  text-decoration: initial;
+  text-decoration: underline;
   text-transform: none;
   letter-spacing: normal;
   border: initial;
