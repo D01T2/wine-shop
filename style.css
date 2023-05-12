@@ -99,9 +99,9 @@ nav li {
   padding: 10px;
 }
 
-          /*-----------------------------------------------------*/
+
           /*---top-page with the wine bottle in the background---*/
-          /*-----------------------------------------------------*/
+
 
 .top-site {
   position: relative;
@@ -128,9 +128,9 @@ nav li {
   top: 50%;
 }
 
-          /*-----------------------------------------------------*/
+
 /*---section with the subscription link and the events link which takes you to Wine-Abo / events  page---*/
-          /*-----------------------------------------------------*/
+
 
 .content {
   display: flex;
@@ -151,9 +151,7 @@ nav li {
   top: 50%;
 }
 
-          /*-----------------------------------------------------*/
           /*-------------------link to instagram-----------------*/
-          /*-----------------------------------------------------*/
 
 .socialmedia {
   margin-top: 100px;
@@ -163,9 +161,10 @@ nav li {
 }
 
 /*
--here we have a smaller padding for the instagram link (button) from the rest.
+-here we have a smaller padding for the instagram link (button).
 -the rest the link will inherit from the main.
 */
+
 .socialmedia a {
   font-size: 22px;
   padding: 10px;
