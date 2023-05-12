@@ -276,6 +276,7 @@ nav li {
 
 .event1 {
   background-image: url(bilder/red-and-white-wine.jpg);
+  background-size: cover;
   height: 100vh;
   color: #d7b037;
 }
