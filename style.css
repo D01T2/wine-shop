@@ -284,37 +284,42 @@ nav li {
   width: 400px;
   text-align: center;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .event2 {
-  border: 2px solid #f00;
+  position: relative;
+  background-image: url(bilder/bordeaux.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #d7b037;
+  text-align: center;
+}
+
+.event2 h2 {
+  padding: 150px;
+}
+
+.event2 p {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 15px;
+  padding: 10px;  
+}
+
+.event3 p {
+  display: inline;
   float: left;
+  width: 50%;
+  margin: 0 0 0 50px;
 }
-
-.event2 img {
-  float: right;
-}
-
-
-
 /*--- contact ---*/
-/*
+
 .formular h1 {
   text-align: center;
   padding: 25px;
 }
 
-/*
-the colors that we need!
-
-white color: #efefef;
-grey color: #e7e3e0;
-grey'isch color: #dbd4cf;
-gold color: #d7b037;
-red color: #6b2428;
-bordeaux red color: #331014;
-*/
-/*
 .kontakt {
   display: block;
   background-color: #efefef;
@@ -323,14 +328,6 @@ bordeaux red color: #331014;
   width: 700px;
   padding: 1rem;
   margin: 15px auto;
-}
-
-.kontakt div {
-  margin-bottom: 1rem;
-}
-
-.kontakt label[for]{
-  display: block;
 }
 
 input, textarea {
@@ -343,15 +340,10 @@ input, textarea {
   border: 1px solid #CEE1E8;
 }
 
-.kontakt input:hover {
-  border: 1px solid #6b2428;
-  background-color: lightgoldenrodyellow;
-}
-
+.kontakt input:hover,
 .kontakt textarea:hover {
   border: 1px solid #6b2428;
   background-color: lightgoldenrodyellow;
-
 }
 
 .btncontact {
