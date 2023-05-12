@@ -366,6 +366,26 @@ input, textarea {
   color: #6b2428;
   font-weight: bold;
 }
+
+.impressum {
+  padding: 50px;
+  line-height: 2;
+}
+
+.impressum a {
+  font-size: initial;
+  font-weight: initial;
+  text-decoration: initial;
+  text-transform: none;
+  letter-spacing: normal;
+  border: initial;
+  border-radius: initial;
+  background-color: initial;
+  color: initial;
+  padding: initial;
+  transition: initial;
+}
+
 <<<<<<< HEAD
 
 =======
