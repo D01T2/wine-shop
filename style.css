@@ -277,6 +277,7 @@ nav li {
 .event1 {
   background-image: url(bilder/red-and-white-wine.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   color: #d7b037;
 }
@@ -292,6 +293,7 @@ nav li {
   position: relative;
   background-image: url(bilder/bordeaux.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   color: #d7b037;
   text-align: center;
