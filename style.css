@@ -109,7 +109,8 @@ nav li {
   background-image: url(bilder/desktop-img.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 60vw;
+  height: 65vh;
+  max-height: 100%;
 }
 
 .top-site h1 {
@@ -138,6 +139,10 @@ nav li {
 .contenttxt p {
   margin: 25px;
   text-align: center;
+}
+
+.content img {
+  height: 450px;
 }
 
 .contenttxt a {
@@ -253,12 +258,12 @@ nav li {
 }
 
 /*---events---*/
-
+/*---We use Grid to arange the text over the background for the first and second event and video and text for the last event.---*/
 .event1 {
   background-image: url(bilder/red-and-white-wine.jpg);
   background-size: cover;
   background-position: center;
-  height: 65vh;
+  height: 75vh;
   color: #CEE1E8;
 }
 
@@ -272,19 +277,18 @@ nav li {
 
 .event2 {
   display: grid;
+  grid-template-rows: 10% 90%;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   background-image: url(bilder/bordeaux.jpg);
   background-size: cover;
   background-position: center;
-  height: 65vh;
+  height: 75vh;
   color: #d7b037;
 }
 
 .event2 p {
   display: grid;
-  justify-content: center;
-  align-items: flex-end;
   line-height: 1.7;
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 15px;
@@ -301,7 +305,8 @@ nav li {
   grid-column-gap: 2em;
   padding: 25px;
 }
-
+/*here we gave names to the areas the we have in the event 3*/
+/*when we use grid-template-areas we need to assigned every area with a name to make the template as it is on the design.*/
 .event3 h2 {grid-area: title;}
 .event3 p {grid-area: text;}
 .event3 iframe {grid-area: video;}
