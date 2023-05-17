@@ -59,7 +59,6 @@ a:visited {
   border-radius: 5px;
   background-color: #331014;
   color: #d7b037;
-  padding: 15px;
 }
 
 a:hover,
@@ -107,11 +106,10 @@ nav li {
   display: grid;
   justify-items: start;
   align-content: center;
-/*------------------------------------------------------*/
   background-image: url(bilder/desktop-img.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 60vh;
+  min-height: 60vw;
 }
 
 .top-site h1 {
@@ -198,25 +196,16 @@ nav li {
 /*-----------------------------------------------*/
 
 .subscription {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 25px;
 }
 
-.subscription img {
-  float: left;
-}
-
 .abonnieren {
-  display: inline;
-  margin: auto;
   font-weight: bold;
-}
-
-.name {
-  margin: 25px;
-  padding: 10px 25px;
-  border: none;
 }
 
 .abonnieren button {
@@ -238,9 +227,7 @@ nav li {
 
 /*---products---*/
 
-.products {
-  display: block;
-}
+
 .products h1 {
   text-align: center;
   padding: 50px 0;
@@ -255,10 +242,11 @@ nav li {
 .list {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   text-align: center;
 }
+
 
 .product {
   background-color: #dbd4cf;
@@ -271,13 +259,14 @@ nav li {
   background-image: url(bilder/red-and-white-wine.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  color: #d7b037;
+  height: 65vh;
+  color: #CEE1E8;
 }
 
 .event1 p {
   width: 400px;
   text-align: center;
+  line-height: 1.7;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -289,28 +278,35 @@ nav li {
   background-image: url(bilder/bordeaux.jpg);
   background-size: cover;
   background-position: center;
-  height: 190vh;
+  height: 65vh;
   color: #d7b037;
-}
-
-.event2 h2 {
-  padding: 150px;
 }
 
 .event2 p {
   display: grid;
   justify-content: center;
   align-items: flex-end;
+  line-height: 1.7;
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 15px;
   padding: 10px;  
 }
 
-.event3 p {
-  float: left;
-  width: 50%;
-  margin: 0 0 0 50px;
+.event3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+    "title title"
+    "video text";
+  grid-column-gap: 2em;
+  padding: 25px;
 }
+
+.event3 h2 {grid-area: title;}
+.event3 p {grid-area: text;}
+.event3 iframe {grid-area: video;}
+
 /*--- contact ---*/
 
 .formular h1 {
