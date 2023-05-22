@@ -392,9 +392,8 @@ input, textarea {
 
   header,
   footer {
-
+    position: static;
     display: flex;
-    top: 0;
     flex-direction: column;
     background-color: #331014;
     color: #d7b037;
