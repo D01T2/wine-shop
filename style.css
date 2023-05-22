@@ -82,7 +82,7 @@ header,
 footer {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 10;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -130,19 +130,19 @@ nav li {
 
 .content {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   margin-top: 50px;
 }
 
-.contenttxt h2, 
-.contenttxt p {
+.contenttxt {
+  flex: 50%;
   margin: 25px;
   text-align: center;
 }
 
 .content img {
-  height: 450px;
+  max-width: 450px;
 }
 
 .contenttxt a {
@@ -382,4 +382,55 @@ input, textarea {
   color: initial;
   padding: initial;
   transition: initial;
+}
+/*---we make the responsive design. From a width of 750px the design will change---*/
+@media (max-width: 750px) {
+  /**/
+  .body {
+    max-width: 100%;
+  }
+
+  header,
+  footer {
+
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    background-color: #331014;
+    color: #d7b037;
+    padding: 1em 2em;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* we use <nav> because both lists are the same header and footer */
+  nav li {
+    display: flex;
+    padding: 0.5em;
+  }
+
+  nav a:hover {
+    background-color: #d7b037;
+    color: #331014;
+    border: #d7b037;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .content img {
+    order: 1;
+  }
+
+  footer li {
+    padding:  0.5em;
+  }
 }
