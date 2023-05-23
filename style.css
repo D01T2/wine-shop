@@ -183,6 +183,7 @@ nav li {
   font-size: 22px;
   padding: 10px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .newsletter {
@@ -335,9 +336,9 @@ nav li {
 /*when we use grid-template-areas we need to assigned every area with a name to make the template as it is on the design.*/
 .event3 h2 {
   display: flex;
-  grid-area: title;
   justify-content: center;
   align-items: center;
+  grid-area: title;
 }
 .event3 p {grid-area: text;}
 .event3 iframe {
