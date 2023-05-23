@@ -333,7 +333,12 @@ nav li {
 }
 /*here we gave names to the areas the we have in the event 3*/
 /*when we use grid-template-areas we need to assigned every area with a name to make the template as it is on the design.*/
-.event3 h2 {grid-area: title;}
+.event3 h2 {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+  align-items: center;
+}
 .event3 p {grid-area: text;}
 .event3 iframe {
   grid-area: video;
