@@ -148,6 +148,7 @@ nav li {
 
 .content1 img,
 .content2 img {
+  width: 100%;
   max-width: 450px;
   margin: 0 1.5em;
 }
@@ -216,6 +217,11 @@ nav li {
   gap: 1.5em;
   text-align: center;
   margin: 25px;
+}
+
+.subscription img {
+  width: 100%;
+  max-height: 450px;
 }
 
 .abonnieren {
@@ -452,6 +458,7 @@ input, textarea {
   }
 
   .content2 img {
+    width: 100%;
     order: 0;
   }
 
