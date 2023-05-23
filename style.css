@@ -20,14 +20,13 @@ bordeaux red color: #331014;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
           /*-----body arangement and color-----*/
 
 body {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   display: block;
   background-color: #dbd4cf;
   font-family: 'poppins', sans-serif;
@@ -216,6 +215,8 @@ nav li {
 
 .subscription {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.5em;
   text-align: center;
   margin: 25px;
