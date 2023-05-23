@@ -86,7 +86,8 @@ footer {
   z-index: 10;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;    background: linear-gradient(180deg, #331014 70%, #6b2428 100%);
+  justify-content: space-between;    
+  background: linear-gradient(180deg, #331014 70%, #6b2428 100%);
   color: #d7b037;
   padding: 15px 0;
   font-size: 20px;
@@ -446,6 +447,19 @@ input, textarea {
     border-radius: 10px;
     transition: 0.5s;
     
+  }
+
+  .top-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background-image: url(bilder/phone-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 100%;
+    padding-top: 30%;
   }
 
   .content1,
