@@ -7,10 +7,9 @@ grey'isch color: #dbd4cf;
 gold color: #d7b037;
 red color: #6b2428;
 bordeaux red color: #331014;
-
 */
 
-          /*-----for start we set the hole page with font, style and color------*/
+/*for start we set the hole page with font, style and color*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap');
 
@@ -22,7 +21,7 @@ bordeaux red color: #331014;
   scroll-behavior: smooth;
 }
 
-          /*-----body arangement and color-----*/
+/*body arangement and color*/
 
 body {
   margin: 0 auto;
@@ -71,7 +70,7 @@ a:focus {
   transition: 0.5s;
 }
 
-          /*-----logo, header and footer adjustment-----*/
+/*logo, header and footer adjustment*/
 
 .logo {
   padding-left: 20px;
@@ -85,7 +84,7 @@ footer {
   z-index: 10;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;    
+  justify-content: space-around;    
   background: linear-gradient(180deg, #331014 70%, #6b2428 100%);
   color: #d7b037;
   padding: 15px 0;
@@ -93,7 +92,7 @@ footer {
   font-weight: bold;
 }
 
-/* we use <nav> because both lists are the same header and footer */
+/*we use <nav> because both lists are the same header and footer*/
 
 nav li {
   display: inline;
@@ -101,7 +100,7 @@ nav li {
 }
 
 
-/*---top-page with the wine bottle in the background---*/
+/*top-page with the wine bottle in the background*/
 .top-site {
   display: grid;
   justify-items: start;
@@ -125,7 +124,7 @@ nav li {
 }
 
 
-/*---section with the subscription link and the events link which takes you to Wine-Abo / events  page---*/
+/*section with the subscription link and the events link which takes you to Wine-Abo / events  page*/
 .main-title {
   text-align: center;
   padding-top: 1.5em;
@@ -164,7 +163,7 @@ nav li {
   
 }
 
-          /*-------------------link to instagram-----------------*/
+/*link to instagram*/
 
 .socialmedia {
   margin-top: 100px;
@@ -248,7 +247,7 @@ nav li {
 }
 /*---------------------------------------------------*/
 
-/*---products---*/
+/*products*/
 
 
 .products h1 {
@@ -279,8 +278,8 @@ nav li {
   height: 20em;
 }
 
-/*---events---*/
-/*---We use Grid to arange the text over the background for the first and second event and video and text for the last event.---*/
+/*events*/
+/*We use Grid to arange the text over the background for the first and second event and video and text for the last event.*/
 .event1 {
   display: flex;
   flex-direction: column;
@@ -316,6 +315,7 @@ nav li {
 }
 
 .event2 p {
+  display: block;
   text-align: center;
   line-height: 1.7;
   background-color: rgba(0, 0, 0, 0.9);
@@ -348,7 +348,7 @@ nav li {
   height: 100%;
 }
 
-/*--- contact ---*/
+/*contact*/
 
 .formular h1 {
   text-align: center;
@@ -420,9 +420,8 @@ input, textarea {
   padding: initial;
   transition: initial;
 }
-/*---we make the responsive design. From a width of 750px the design will change---*/
+/*we make the responsive design. From a width of 750px the design will change*/
 @media (max-width: 750px) {
-  /**/
   .body {
     max-width: 100%;
   }
@@ -445,15 +444,6 @@ input, textarea {
     display: flex;
     justify-content: center;
     padding: 0.5em;
-  }
-
-  nav a:hover {
-    background-color: #d7b037;
-    color: #331014;
-    border: #d7b037;
-    border-radius: 10px;
-    transition: 0.5s;
-    
   }
 
   .top-site {
@@ -522,6 +512,7 @@ input, textarea {
   
   .event3 iframe {
     width: 100%;
+    height: 100%;
   }
 
   .kontakt {
