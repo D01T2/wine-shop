@@ -21,7 +21,7 @@ bordeaux red color: #331014;
   scroll-behavior: smooth;
 }
 
-/*body arangement and color*/
+/*body arrangement and color*/
 
 body {
   margin: 0 auto;
@@ -34,8 +34,6 @@ body {
 main {
   background-color: #e7e3e0;
 }
-
-/*for all the link I made them the same*/
 
 h2 {
   text-align: center;
@@ -68,13 +66,6 @@ a:focus {
   border: none;
   border-radius: 5px;
   transition: 0.5s;
-}
-
-/*logo, header and footer adjustment*/
-
-.logo {
-  padding-left: 20px;
-  font-size: 20px;
 }
 
 header,
@@ -210,8 +201,6 @@ nav li {
   margin: 0 auto 35px;
 }
 
-/*-----------------------------------------------*/
-
 .subscription {
   display: flex;
   justify-content: center;
@@ -245,7 +234,6 @@ nav li {
   background-color: #d7b037;
   color: #331014;
 }
-/*---------------------------------------------------*/
 
 /*products*/
 
@@ -348,7 +336,7 @@ nav li {
   height: 100%;
 }
 
-/*contact*/
+/*contact site*/
 
 .formular h1 {
   text-align: center;
@@ -401,7 +389,7 @@ input, textarea {
   color: #6b2428;
   font-weight: bold;
 }
-
+/*impressum site*/
 .impressum {
   padding: 50px;
   line-height: 2;
