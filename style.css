@@ -68,6 +68,15 @@ a:focus {
   transition: 0.5s;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+nav a {
+  opacity: 1;
+  position: relative;
+}
+
 header,
 footer {
   position: sticky;
@@ -75,21 +84,35 @@ footer {
   z-index: 10;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;    
-  background: linear-gradient(180deg, #331014 70%, #6b2428 100%);
+  justify-content: space-around;
+  background-color:  #331014 ;
   color: #d7b037;
-  padding: 15px 0;
+  padding: 15px;
   font-size: 20px;
   font-weight: bold;
 }
 
+nav {
+  position: relative;
+  text-align: left;
+  transition: none;
+  transform: scale(1,1);
+  background: none;
+  top: initial;
+  left: initial;
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 /*we use <nav> because both lists are the same header and footer*/
 
 nav li {
   display: inline;
   padding: 10px;
+  margin-left: 3em;
+  margin-bottom: 0;
 }
-
 
 /*top-page with the wine bottle in the background*/
 .top-site {
@@ -408,30 +431,101 @@ input, textarea {
   padding: initial;
   transition: initial;
 }
+/*we make the responsive design. From a width of 1200px the design will change*/
+
+
+@media (max-width: 1024px) {
+  header,
+  header nav,
+  header > ul, {
+    all: unset;
+  }
+  
+  
+}
+
 /*we make the responsive design. From a width of 750px the design will change*/
 @media (max-width: 750px) {
   .body {
     max-width: 100%;
   }
 
-  header,
-  footer {
-    position: static;
+  header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(lightblue, .75);
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #6b2428 5%, #331014 20%);
-    color: #d7b037;
-    padding: 1em 2em;
-    font-size: 20px;
-    font-weight: bold;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+  
+  .nav-toggle-label span::before {
+    bottom: 10px;
+  }
+  
+  .nav-toggle-label span::after {
+    top: 10px;
+  }
+  
+  nav {
+    position: absolute;
+    top: 100%;
+    padding: 0 100%;
+    background: #331014;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
   }
 
+  nav a {
+    background-color: #6b2428;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  .nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
   /* we use <nav> because both lists are the same header and footer */
   nav li {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0.5em;
+    margin: 0;
   }
 
   .top-site {
@@ -511,5 +605,14 @@ input, textarea {
     max-width: 375px;
     padding: 1rem;
     margin: 15px auto;
+  }
+
+  footer nav,
+  footer ul,
+  footer li,
+  footer a {
+    all: unset;
+    display: flex;
+    flex-direction: column;
   }
 }
