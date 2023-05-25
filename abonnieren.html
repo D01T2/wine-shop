@@ -8,17 +8,22 @@
   <title>Wine-Shop</title>
 </head>
 <body>
+  <!--the navigation bar in .css is the same like the footer-->
   <header>
-    <div class="logo">&#x1F377;</div>
+    <h1 class="logo">&#x1F377;</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><a href="index.html" >Über uns</a></li>
-        <li><a href="abonnieren.html"class="current">Abonnieren</a></li>
+        <li><a href="index.html" class="current">Über uns</a></li>
+        <li><a href="abonnieren.html">Abonnieren</a></li>
         <li><a href="produkte.html">Produkte</a></li>
         <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
   </header>
 
   <main>
