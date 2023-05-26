@@ -8,7 +8,12 @@ gold color: #d7b037;
 red color: #6b2428;
 bordeaux red color: #331014;
 */
-
+:root {
+  --blue: #08122B;
+  --brown: #402220;
+  --red: #53001D;
+  --rose: #F9EFEE;
+}
 /*for start we set the hole page with font, style and color*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap');
@@ -27,12 +32,12 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   display: block;
-  background-color: #dbd4cf;
+  background-color: #fff;
   font-family: 'poppins', sans-serif;
 }
 
 main {
-  background-color: #e7e3e0;
+  background-color: var(--rose);
 }
 
 h2 {
@@ -54,20 +59,21 @@ a:visited {
   letter-spacing: 2px;
   border: none;
   border-radius: 5px;
-  background-color: #331014;
-  color: #d7b037;
+  background-color: var(--brown);
+  color: var(--rose);
 }
 
 a:hover,
 a:focus {
   font-weight: bold;
-  background-color: #d7b037;
-  color: #331014;
+  background-color: var(--rose);
+  color: var(--brown);
   border: none;
   border-radius: 5px;
   transition: 0.5s;
 }
 /*navigation bar*/
+/*here we have the toggle for the menu button which is hidden in */
 .nav-toggle {
   display: none;
 }
@@ -85,8 +91,8 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  background-color:  #331014 ;
-  color: #d7b037;
+  background-color:  var(--brown) ;
+  color: var(--rose);
   padding: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -126,7 +132,7 @@ nav li {
 
 .top-site h1 {
   line-height: 2;
-  color: #d7b037;
+  color: var(--rose);
   margin: 0 50px;
 }
 
@@ -215,11 +221,11 @@ nav li {
 .newsletter button {
   display: block;
   font-size: 20px;
-  background-color: #331014;
-  color: #d7b037;
+  background-color: var(--brown);
+  color: var(--rose);
   border-radius: 5px;
   padding: 0 7px;
-  margin: 0 auto 35px;
+  margin: 10px auto 35px;
 }
 
 .subscription {
@@ -244,22 +250,23 @@ nav li {
   font-weight: bold;
   padding: 10px;
   margin: 25px;
-  background-color: #331014;
-  color: #d7b037;
+  background-color: var(--brown);
+  color: var(--rose);
   border-radius: 10px;
   border: none; 
 }
 
 .abonnieren button:hover {
   font-weight: bold;
-  background-color: #d7b037;
-  color: #331014;
+  background-color: var(--rose);
+  color: var(--brown);
 }
 
 /*products*/
 
 
 .products h1 {
+  color: var(--red);
   text-align: center;
   padding: 50px 0;
 }
@@ -279,7 +286,7 @@ nav li {
 }
 
 .product {
-  background-color: #dbd4cf;
+  color: var(--red);
   padding-top: 25px;
 }
 
@@ -293,7 +300,8 @@ nav li {
 .event3 {
   margin: 1em;
   padding: 1em 0;
-  border-bottom: 2px solid #331014;
+  border-bottom: 2px solid var(--blue);
+  color: var(--red);
   text-align: center;
 }
 
@@ -307,7 +315,7 @@ nav li {
 }
 
 summary {
-  color: #6b2428;
+  color: var(--blue);
 }
 
 iframe {
@@ -323,9 +331,13 @@ iframe {
 }
 
 .kontakt {
-  display: block;
-  background-color: #efefef;
-  border: 6px solid #d7b037;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5em;
+  background-color: var(--rose);
+  border: 6px solid var(--red);
   border-radius: 15px;
   max-width: 700px;
   padding: 1rem;
@@ -339,33 +351,29 @@ input, textarea {
 
 .kontakt textarea {
   font-size: 15px;
-  border: 1px solid #CEE1E8;
+  border: 1px solid var(--rose);
 }
 
 .kontakt input:hover,
 .kontakt textarea:hover {
-  border: 1px solid #6b2428;
-  background-color: lightgoldenrodyellow;
+  border: 1px solid var(--brown);
+  background-color: var(--rose);
 }
 
-.btncontact {
-  margin-right: 25px;
-  text-align: right;
-}
 
 .contactme {
   padding: 10px 25px;
-  border: none;
-  background-color: #6b2428;
-  color: #d7b037;
+  background-color: var(--brown);
+  color: var(--rose);
   cursor: pointer;
+  border: 1px solid var(--brown);
   border-radius: 10px;
   font-weight: bold;
 }
 
 .contactme:hover {
-  background-color: #d7b037;
-  color: #6b2428;
+  background-color: var(--rose);
+  color: var(--brown);
   font-weight: bold;
 }
 /*impressum site*/
@@ -400,7 +408,7 @@ input, textarea {
   }
   
   .nav-toggle:focus ~ .nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
+    outline: 3px solid var(--rose);
   }
   
   .nav-toggle-label {
@@ -417,7 +425,7 @@ input, textarea {
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     display: block;
-    background: white;
+    background: var(--rose);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -442,14 +450,14 @@ input, textarea {
     position: absolute;
     top: 100%;
     padding: 0 100%;
-    background: #331014;
+    background: var(--brown);
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
   }
 
   nav a {
-    background-color: #6b2428;
+    background-color: var(--red);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
   }
@@ -524,11 +532,13 @@ input, textarea {
   }
  
   .kontakt {
-    display: block;
-    background-color: #efefef;
-    border: 6px solid #d7b037;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+    border: none;
     border-radius: 15px;
-    max-width: 375px;
     padding: 1rem;
     margin: 15px auto;
   }
