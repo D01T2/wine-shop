@@ -326,7 +326,7 @@ iframe {
   padding: 25px;
 }
 
-.kontakt {
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -342,16 +342,16 @@ iframe {
 
 input, textarea {
   /*?*/ width: 100%; /*?*/
-  border: none;
-}
-
-.kontakt textarea {
-  font-size: 15px;
   border: 1px solid var(--rose);
+  padding: 0.5em;
 }
 
-.kontakt input:hover,
-.kontakt textarea:hover {
+.contact textarea {
+  font-size: 15px;
+}
+
+.contact input:hover,
+.contact textarea:hover {
   border: 1px solid var(--brown);
   background-color: var(--rose);
 }
@@ -372,7 +372,9 @@ input, textarea {
   color: var(--brown);
   font-weight: bold;
 }
+
 /*impressum site*/
+
 .impressum {
   padding: 50px;
   line-height: 2;
@@ -527,7 +529,7 @@ input, textarea {
     padding: 0 1em;
   }
  
-  .kontakt {
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
