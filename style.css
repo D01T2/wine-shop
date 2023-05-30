@@ -65,6 +65,7 @@ a:focus {
   background-color: var(--rose);
   color: var(--brown);
   border: none;
+  padding: 8px;
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -77,6 +78,7 @@ a:focus {
 nav a {
   opacity: 1;
   position: relative;
+  padding: 0.5em;
 }
 
 header,
@@ -103,14 +105,13 @@ nav {
   top: initial;
   left: initial;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 nav li {
   display: inline;
-  padding: 10px;
-  margin-left: 3em;
+  margin-left: 8px;
   margin-bottom: 0;
 }
 
@@ -394,7 +395,7 @@ input, textarea {
   transition: initial;
 }
 /*we make the responsive design. From a width of 750px the design will change*/
-@media (max-width: 750px) {
+@media (max-width: 960px) {
   .body {
     max-width: 100%;
   }
@@ -548,5 +549,7 @@ input, textarea {
     all: unset;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 10px;
   }
 }
