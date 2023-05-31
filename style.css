@@ -120,7 +120,7 @@ nav li {
   display: grid;
   justify-items: start;
   align-content: center;
-  background-image: url(pics/desktop-img.jpg);
+  background-image: url(images/desktop-img.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -483,7 +483,7 @@ input, textarea {
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    background-image: url(pics/phone-img.jpg);
+    background-image: url(images/phone-img.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
