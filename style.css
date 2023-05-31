@@ -140,38 +140,42 @@ nav li {
 
 
 /*section with the subscription link and the events link which takes you to Wine-Abo / events  page*/
+
 .main-title {
-  text-align: center;
-  padding-top: 1.5em;
-  font-family: 'Dancing Script', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
-.content1,
-.content2 {
+.weinabo,
+.veranstaltung {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 3em;
 }
 
-.contenttxt {
+.sectiontxt {
   flex: 50%;
   margin: 25px;
   text-align: center;
 }
 
-.content1 img,
-.content2 img {
+.weinabo img,
+.veranstaltung img {
   width: 100%;
   max-width: 450px;
   margin: 0 1.5em;
 }
 
-.content2 img {
+.veranstaltung img {
   order: 2;
 }
 
-.contenttxt a {
+.sectiontxt a {
   display: inline-block;
   margin: 20px 0;
   padding: 10px 30px;
@@ -225,6 +229,8 @@ nav li {
   margin: 10px auto 35px;
 }
 
+/*here comes the subscription page*/
+
 .subscription {
   display: flex;
   justify-content: center;
@@ -261,20 +267,7 @@ nav li {
 
 /*products*/
 
-
-.products h1 {
-  color: var(--red);
-  text-align: center;
-  padding: 50px 0;
-}
-
-.products summary {
-  text-align: center;
-  padding: 1.5em;
-  cursor: pointer;
-}
-
-.list {
+.products {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 2em;
@@ -291,7 +284,14 @@ nav li {
   height: 20em;
 }
 
+.products summary {
+  text-align: center;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
 /*events*/
+
 .event1,
 .event2,
 .event3 {
@@ -322,33 +322,26 @@ iframe {
 
 /*contact site*/
 
-.formular h1 {
-  text-align: center;
-  padding: 25px;
+.formular {
+  padding-bottom: 2em;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5em;
+  gap: 0.7em;
   background-color: var(--rose);
   border: 6px solid var(--red);
   border-radius: 15px;
   max-width: 700px;
   padding: 1rem;
-  margin: 15px auto;
+  margin: auto;
 }
 
-input, textarea {
-  /*?*/ width: 100%; /*?*/
+input, 
+textarea {
   border: 1px solid var(--rose);
   padding: 0.5em;
-}
-
-.contact textarea {
-  font-size: 15px;
 }
 
 .contact input:hover,
@@ -356,7 +349,6 @@ input, textarea {
   border: 1px solid var(--brown);
   background-color: var(--rose);
 }
-
 
 .contactme {
   padding: 10px 25px;
@@ -373,6 +365,13 @@ input, textarea {
   color: var(--brown);
   font-weight: bold;
 }
+
+.dataschultz a {
+  all: unset;
+  text-decoration: underline;
+  color: red;
+}
+
 
 /*impressum site*/
 
@@ -394,10 +393,29 @@ input, textarea {
   padding: initial;
   transition: initial;
 }
+
+.dataschultz {
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+.dataschultz h3,
+.dataschultz h4,
+.dataschultz ul {
+  margin-left: 2em;
+}
+
+
+
+
 /*we make the responsive design. From a width of 750px the design will change*/
 @media (max-width: 960px) {
   .body {
     max-width: 100%;
+  }
+
+  main {
+     margin-top: 2em;
   }
 
   header {
@@ -483,7 +501,7 @@ input, textarea {
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    background-image: url(images/phone-img.jpg);
+    background-image: url(images/wine-glass.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -491,8 +509,8 @@ input, textarea {
     padding-top: 30%;
   }
 
-  .content1,
-  .content2 {
+  .weinabo,
+  .veranstaltung {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,7 +518,7 @@ input, textarea {
     margin-top: 50px;
   }
 
-  .content2 img {
+  .veranstaltung img {
     width: 100%;
     order: 0;
   }
@@ -515,7 +533,7 @@ input, textarea {
     align-items: center;
   }
 
-  .list {
+  .products {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -523,11 +541,9 @@ input, textarea {
     text-align: center;
   }
 
-  .event {
+  .events {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    padding: 0 1em;
   }
  
   .contact {

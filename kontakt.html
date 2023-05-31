@@ -14,11 +14,11 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><a href="index.html" class="current">Über uns</a></li>
+        <li><a href="index.html">Über uns</a></li>
         <li><a href="abonnieren.html">Abonnieren</a></li>
         <li><a href="produkte.html">Produkte</a></li>
         <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html" class="current">Kontakt</a></li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -27,12 +27,14 @@
   </header>
 
   <main>
+
+    <h1 class="main-title">Kontakt</h1>
+    
     <section class="formular">
-      <h1>Kontakt</h1>
       <form class="contact">
-        <label for="vname">Vorname: *</label>
+        <label for="vorname">Vorname: *</label>
         <input type="text" id="vname" name="vorname" placeholder="Vorname eintragen" required>
-        <label for="nname">Nachname: *</label>
+        <label for="nachname">Nachname: *</label>
         <input type="text" id="nname" name="nachname" placeholder="Nachname eintragen" required>
         <label for="email">E-Mail Addresse: *</label>
         <input type="text" id="email" name="email" placeholder="beispiel@beisiel.de" required>
@@ -40,7 +42,11 @@
         <input type="tel" id="telephone" placeholder="Freiwilling Telephone">
         <label for="nachricht">Nachricht: *</label>
         <textarea type="text" id="nachricht" name="nachricht" cols="50" rows="5" required>Bitte Nachricht eintragen.</textarea>
-        
+        <div class="dataschultz">
+          <label for="DSGVO">
+            <input type="checkbox" id="dsgvo" name="dsvgo" required> Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden (<a href="dataschultz.html">Datenschutzerklärung</a>).
+          </label>
+        </div>
         <div class="btncontact">
           <button class="contactme" type="submit" value="Abgeschickt">Senden!</button>
         </div>
@@ -53,6 +59,7 @@
       <ul>
         <li>&#169; Me & mE</li>
         <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="dataschultz.html">Dataschultz</a></li>
         <li><a href="#top"> &#10595;  Nach oben</a></li>
       </ul>
     </nav>
