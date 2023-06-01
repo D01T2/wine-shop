@@ -615,6 +615,11 @@ iframe {
     -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   }
 
+  .mycontact {
+    display: flex;
+    flex-direction: column;
+  }
+
   footer nav,
   footer ul,
   footer li,
