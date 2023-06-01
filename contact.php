@@ -1,16 +1,14 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve form data
+    // Retrieve data form 
     $vorname = $_POST['vorname'];
     $nachname = $_POST['nachname'];
     $email = $_POST['email'];
     $telephone = $_POST['telephone'];
     $nachricht = $_POST['nachricht'];
 
-    // You can perform additional validation or data processing here
-
     // Send email notification
-    $to = 'your-email@example.com';
+    $to = 'enea.marian@proton.me';
     $subject = 'Contact Form Submission';
     $message = "Vorname: $vorname\n"
              . "Nachname: $nachname\n"
@@ -21,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                "Reply-To: $email\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo 'Thank you for your submission!';
+        echo 'Vielen Dank für ihr Abonnement!';
     } else {
-        echo 'Oops! An error occurred. Please try again later.';
+        echo 'Oops! Ein Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.';
     }
 }
 ?>
