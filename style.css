@@ -323,20 +323,23 @@ iframe {
 /*contact site*/
 
 .formular {
-  padding-bottom: 2em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 0.7em;
   background-color: var(--rose);
-  border: 6px solid var(--red);
-  border-radius: 15px;
-  max-width: 700px;
-  padding: 1rem;
-  margin: auto;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  padding: 1.5em;
+  gap: 1em;
 }
+
 
 input, 
 textarea {
@@ -370,6 +373,46 @@ textarea {
   all: unset;
   text-decoration: underline;
   color: red;
+}
+
+.mapcontact {
+  padding: 0 0.5em;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+}
+
+iframe {
+  margin-top: 0.5em;
+  border-radius: 5px;
+}
+
+.mycontact {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column: var(--blue);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.8em;
+}
+
+.rowcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.rowcontact img {
+  width: 30px;
+  margin: 1em;
+}
+
+.rowcontact a {
+  all: unset;
+  font-weight: bold;
 }
 
 
@@ -550,16 +593,26 @@ textarea {
     flex-direction: column;
   }
  
+  .formular {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 0.5em;
-    border: none;
-    border-radius: 15px;
-    padding: 1rem;
-    margin: 15px auto;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  .mapcontact {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+    -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   }
 
   footer nav,
