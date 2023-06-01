@@ -148,6 +148,7 @@ nav li {
   height: 20vh;
   font-size: 2.5em;
   font-weight: bold;
+  text-shadow: 0 0 5px #000;
 }
 
 .weinabo,
@@ -155,7 +156,7 @@ nav li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3em;
+  margin: 3em;
 }
 
 .sectiontxt {
@@ -273,11 +274,15 @@ nav li {
   gap: 2em;
   justify-content: center;
   text-align: center;
+  padding: 1em;
 }
 
 .product {
   color: var(--red);
   padding-top: 25px;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
 }
 
 .product img {
@@ -289,6 +294,11 @@ nav li {
   padding: 1.5em;
   cursor: pointer;
 }
+
+.product details {
+  padding: 0.5em;
+}
+
 
 /*events*/
 
@@ -309,6 +319,9 @@ nav li {
 .event1 img,
 .event2 img {
   width: 100%;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
 }
 
 summary {
@@ -318,6 +331,8 @@ summary {
 iframe {
   width: 100%;
   height: 42vh;
+  margin-top: 0.5em;
+  border-radius: 5px;
 }
 
 /*contact site*/
@@ -380,11 +395,6 @@ textarea {
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-}
-
-iframe {
-  margin-top: 0.5em;
-  border-radius: 5px;
 }
 
 .mycontact {
@@ -586,6 +596,14 @@ iframe {
     gap: 1em;
     justify-content: center;
     text-align: center;
+  }
+
+  .product {
+    margin: 1em 2em;
+  }
+
+  .product > details {
+    padding: 0.5em;
   }
 
   .events {
