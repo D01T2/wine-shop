@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $to = 'enea.marian@proton.me';
     $subject = 'Contact Form Submission';
     $message = "E-Mail: $email;
-    $headers = "From: $email\r\n" .
+    $headers = "From: $email\r\n";
                "Reply-To: $email\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
