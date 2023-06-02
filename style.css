@@ -24,9 +24,9 @@ we set variables for the colors that we will need!
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
   display: block;
-  background-color: #fff;
+  max-width: 1200px;
+  background-color: var(--rose);
   font-family: 'poppins', sans-serif;
 }
 
@@ -52,20 +52,16 @@ a:visited {
   text-transform: uppercase;
   letter-spacing: 2px;
   border: none;
-  border-radius: 5px;
-  background-color: var(--brown);
   color: var(--rose);
 }
 
 a:hover,
 a:focus {
   font-weight: bold;
-  background-color: var(--rose);
-  color: var(--brown);
-  border: none;
+  border-bottom: 3px solid var(--rose);
+  border-left: 3px solid var(--rose);
+  color: var(--rose);
   padding: 8px;
-  border-radius: 5px;
-  transition: 0.5s;
 }
 /*navigation bar*/
 /*here we have the toggle for the menu button which is hidden in */
@@ -175,11 +171,20 @@ nav li {
   order: 2;
 }
 
-.sectiontxt a {
+.sectiontxt a,
+.socialmedia a {
   display: inline-block;
   margin: 20px 0;
   padding: 10px 30px;
-  
+  color: var(--brown);
+}
+
+.sectiontxt a:hover,
+.socialmedia a:hover {
+  border-bottom: 3px solid var(--brown);
+  border-left: 3px solid var(--brown);
+  color: var(--brown);
+  padding: 8px;
 }
 
 /*link to instagram*/
