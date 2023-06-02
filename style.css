@@ -12,8 +12,6 @@ we set variables for the colors that we will need!
 /*for start we set the hole page with font, style and color*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap');
-
 
 * {
   margin: 0;
@@ -281,9 +279,9 @@ nav li {
 .product {
   color: var(--red);
   padding-top: 25px;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
 }
 
 .product img {
@@ -320,9 +318,9 @@ nav li {
 .event1 img,
 .event2 img {
   width: 100%;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
 }
 
 summary {
@@ -349,9 +347,9 @@ iframe {
   display: flex;
   flex-direction: column;
   background-color: var(--rose);
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   padding: 1.5em;
   gap: 1em;
 }
@@ -393,9 +391,9 @@ textarea {
 
 .mapcontact {
   padding: 0 0.5em;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
 }
 
 .mycontact {
@@ -629,9 +627,9 @@ textarea {
     display: block;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
     -moz-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.51);
   }
 
   .mycontact {
