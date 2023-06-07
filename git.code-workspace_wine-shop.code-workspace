@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Indisoft/web dev/Online/VL-Kontaktformular"
+		},
+		{
+			"path": "../../../../Indisoft/web dev/Online/responsive_webdesign/RWD"
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "git"
+  }
+}
