@@ -536,7 +536,7 @@ textarea {
   }
 
   nav a {
-    background-color: var(--red);
+    background-color: var(--brown);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
   }
