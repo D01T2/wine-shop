@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-  
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,82 +9,82 @@
     <title>Wine-Shop</title>
   </head>
 
-<body>
-  <!--the navigation bar in .css is the same like the footer-->
-  <header>
-    <h1 class="logo">&#x1F377;</h1>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-      <ul>
-        <li><a href="index.html">Über uns</a></li>
-        <li><a href="abonnieren.html">Abonnieren</a></li>
-        <li><a href="produkte.html">Produkte</a></li>
-        <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
-        <li><a href="kontakt.html" class="current">Kontakt</a></li>
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-  </header>
+  <body>
+    <!--the navigation bar in .css is the same like the footer-->
+    <header>
+      <h1 class="logo">&#x1F377;</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">Über uns</a></li>
+          <li><a href="abonnieren.html">Abonnieren</a></li>
+          <li><a href="produkte.html">Produkte</a></li>
+          <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+          <li><a href="kontakt.html" class="current">Kontakt</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
 
-  <main>
+    <main>
 
-    <h1 class="main-title">Kontakt</h1>
+      <h1 class="main-title">Kontakt</h1>
 
-    <section class="formular">
-      <form class="contact" action="php/kontakt.php" method="POST">
-          <label for="vorname">Vorname: *</label>
-          <input type="text" id="vname" name="vorname" placeholder="Vorname eintragen" required>
-          <label for="nachname">Nachname: *</label>
-          <input type="text" id="nname" name="nachname" placeholder="Nachname eintragen" required>
-          <label for="email">E-Mail Addresse: *</label>
-          <input type="text" id="email" name="email" placeholder="beispiel@beisiel.de" required>
-          <label for="telefon">Telefon:</label>
-          <input type="tel" id="telephone" placeholder="Freiwilling Telephone">
-          <label for="nachricht">Nachricht: *</label>
-          <textarea type="text" id="nachricht" name="nachricht" cols="30" rows="3" required>Bitte Nachricht eintragen.</textarea>
-          
-          <fieldset for="DSGVO" class="dataschultz">
-            <input type="checkbox" id="dsgvo" name="dsvgo" required> Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden (<a href="dataschultz.html">Datenschutzerklärung</a>).
-          </fieldset>
-          
-          <div class="btncontact">
-            <button class="contactme" type="submit" value="Abgeschickt">Senden!</button>
-          </div>
-      </form>
+      <section class="formular">
+        <form class="contact" action="php/kontakt.php" method="POST">
+            <label for="vorname">Vorname: *</label>
+            <input type="text" id="vname" name="vorname" placeholder="Vorname eintragen" required>
+            <label for="nachname">Nachname: *</label>
+            <input type="text" id="nname" name="nachname" placeholder="Nachname eintragen" required>
+            <label for="email">E-Mail Addresse: *</label>
+            <input type="text" id="email" name="email" placeholder="beispiel@beisiel.de" required>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telephone" placeholder="Freiwilling Telephone">
+            <label for="nachricht">Nachricht: *</label>
+            <textarea type="text" id="nachricht" name="nachricht" cols="30" rows="3" required>Bitte Nachricht eintragen.</textarea>
+            
+            <fieldset for="DSGVO" class="dataschultz">
+              <input type="checkbox" id="dsgvo" name="dsvgo" required> Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden (<a href="dataschultz.html">Datenschutzerklärung</a>).
+            </fieldset>
+            
+            <div class="btncontact">
+              <button class="contactme" type="submit" value="Abgeschickt">Senden!</button>
+            </div>
+        </form>
 
-      <div class="mapcontact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2914.032303766074!2d-79.0741629!3d43.0828162!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1685601513169!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="mycontact">
-          <div class="rowcontact">
-            <img src="images/svg/house-solid.svg" alt="address">
-            <a href="https://www.google.com/maps" target="_blank">Musterstraße 123</a>
-          </div>
-          <div class="rowcontact">
-            <img src="images/svg/phone-solid.svg" alt="phone">
-            <a href="tel:030 1234567-8" target="_blank">Tel: 030 1234567-8</a>
-          </div>
-          <div class="rowcontact">
-            <img src="images/svg/envelope-solid.svg" alt="e-mail">
-            <a href="mailto:max@mustermann.de"target="_blank">E-mail: max@mustermann.de</a>
+        <div class="mapcontact">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2914.032303766074!2d-79.0741629!3d43.0828162!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1685601513169!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mycontact">
+            <div class="rowcontact">
+              <img src="images/svg/house-solid.svg" alt="address">
+              <a href="https://www.google.com/maps" target="_blank">Musterstraße 123</a>
+            </div>
+            <div class="rowcontact">
+              <img src="images/svg/phone-solid.svg" alt="phone">
+              <a href="tel:030 1234567-8" target="_blank">Tel: 030 1234567-8</a>
+            </div>
+            <div class="rowcontact">
+              <img src="images/svg/envelope-solid.svg" alt="e-mail">
+              <a href="mailto:max@mustermann.de"target="_blank">E-mail: max@mustermann.de</a>
+            </div>
           </div>
         </div>
-      </div>
 
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li>&#169; Me & mE</li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="dataschultz.html">Dataschultz</a></li>
-        <li><a href="#top"> &#10595;  Nach oben</a></li>
-      </ul>
-    </nav>
-  </footer>
+    <footer>
+      <nav>
+        <ul>
+          <li>&#169; Me & mE</li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="dataschultz.html">Dataschultz</a></li>
+          <li><a href="#top"> &#10595;  Nach oben</a></li>
+        </ul>
+      </nav>
+    </footer>
 
-</body>
+  </body>
 </html>

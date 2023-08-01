@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="images/wine-glass.png">
-  <title>Wine-Shop</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="images/wine-glass.png">
+		<title>Wine-Shop</title>
+	</head>
+	
+	<body>
+	<!--the navigation bar in .css edited the same like the footer-->
+		<header>
+			<h1 class="logo">&#x1F377;</h1>
+	<!--here we have the menu toggle button as a checkbox input-->
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
+			<nav>
+				<ul>
+					<li><a href="index.html" class="current">Über uns</a></li>
+					<li><a href="abonnieren.html">Abonnieren</a></li>
+					<li><a href="produkte.html">Produkte</a></li>
+					<li><a href="veranstaltungen.html">Veranstaltungen</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+			<label for="nav-toggle" class="nav-toggle-label">
+				<span></span>
+			</label>
+		</header>
 
-  <!--the navigation bar in .css edited the same like the footer-->
-  <header>
-    <h1 class="logo">&#x1F377;</h1>
-    <!--here we have the menu toggle button as a checkbox input-->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-      <ul>
-        <li><a href="index.html" class="current">Über uns</a></li>
-        <li><a href="abonnieren.html">Abonnieren</a></li>
-        <li><a href="produkte.html">Produkte</a></li>
-        <li><a href="veranstaltungen.html">Veranstaltungen</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-  </header>
+		<main>
+	<!--section 1 is the top site with the bottle of wine in the background and the text with the procucts link (button)-->
+			<section class="top-site">
+				<h1>Weine und Weinveranstaltungen</h1>
+				<a href="produkte.html">Produkte</a>
+			</section>
+	<!--here is a small title of the side in h2 to wellcome in the main contents ( wine abo, events, instagram following and newsletter subscription)-->
+			<h2 class="main-title">Wir lieben es, Ihnen das Beste des Weines zu zeigen</h2>
+				<div class="slider">
+	<!--section 2 is the content with the Subscription text and link (button) on the left and the picture on the right-->
+					<div class="slider-content">
+						<div class="weinabo">
+							<img src="images/wine-bottle-velvet-rich.jpg" alt="A bottle of wine on a beautiful rich velvet blanket" title="A delicious red wine on a beautiful rich red velvet blanket">
+							<div class="sectiontxt">
+								<h2>Wein Abo</h2>
+								<p>Wählen Sie Ihre Farbe und Ihren Stil und wir kümmern uns jede Woche oder jeden Monat um den Rest. Mit einer großen Auswahl an Weinen können unsere Sommeliers auch die härtesten Kunden zufrieden stellen.<br><a href="abonnieren.html">Erfahren Sie mehr über hier</a></p>
+							</div>
+						</div>
+						
+	<!--section 3 is the content with the events img on the left side and the text with the link (button) on the right side of the page-->
+						<div class="veranstaltung">
+							<img src="images/wine-bottles.jpg" alt="A photo of bottles on the shelf." title="A celler with wine bottles.">
+							<div class="sectiontxt">
+								<h2>Veranstaltungen</h3>
+								<p>Jeden Monat bieten wir unseren Gästen eine Liste von Veranstaltungen, von denen sie nicht unzufrieden und unwissend nach Hause können.<br><a href="veranstaltungen.html">Erfahren Sie mehr über hier</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+	<!--section 4 is only social media / insta/ newsletter -->
 
-  <main>
-    <!--section 1 is the top site with the bottle of wine in the background and the text with the procucts link (button)-->
+			<section class="socialmedia">
+				<a href="https://www.instagram.com/">follow us <br> @ instagram</a>
+				<form class="newsletter" action="php/email.php" method="POST">
+					<h4>Newsletter Sign Up</h4>
+					<label for="email">E-Mail Addresse: *</label>
+					<input type="text" id="email" name="email" placeholder="beispiel@beisiel.de" required>
+					<button type="submit" value="Abgeschickt">Abonnieren</button>
+				</form>   
+			</section>
+		</main>
 
-    <section class="top-site">
-      <h1>Weine und Weinveranstaltungen</h1>
-      <a href="produkte.html">Produkte</a>
-    </section>
-    <!--here is a small title of the side in h2 to wellcome in the main contents ( wine abo, events, instagram following and newsletter subscription)-->
-    
-    <h2 class="main-title">Wir lieben es, Ihnen das Beste des Weines zu zeigen</h2>
-    
-    <!--section 2 is the content with the Subscription text and link (button) on the left and the picture on the right-->
+	<!--here we have the footer (the same like the navigation bar)-->
+		<footer>
+			<nav>
+				<ul>
+					<li>&#169; Me & mE</li>
+					<li><a href="impressum.html">Impressum</a></li>
+					<li><a href="dataschultz.html">Dataschultz</a></li>
+					<li><a href="#top"> &#10595;  Nach oben</a></li>
+				</ul>
+			</nav>
+		</footer>
 
-    <section class="weinabo">
-      <img src="images/wine-bottle-velvet-rich.jpg" alt="A bottle of wine on a beautiful rich velvet blanket" title="A delicious red wine on a beautiful rich red velvet blanket">
-      <div class="sectiontxt">
-        <h2>Wein Abo</h2>
-        <p>Wählen Sie Ihre Farbe und Ihren Stil und wir kümmern uns jede Woche oder jeden Monat um den Rest. Mit einer großen Auswahl an Weinen können unsere Sommeliers auch die härtesten Kunden zufrieden stellen.<br><a href="abonnieren.html">Erfahren Sie mehr über hier</a></p>
-      </div>
-    </section>
+		<script src="script.js"></script>
 
-    <!--section 3 is the content with the events img on the left side and the text with the link (button) on the right side of the page-->
-
-    <section class="veranstaltung">
-      <img src="images/wine-bottles.jpg" alt="A photo of bottles on the shelf." title="A celler with wine bottles.">
-      <div class="sectiontxt">
-        <h2>Veranstaltungen</h3>
-        <p>Jeden Monat bieten wir unseren Gästen eine Liste von Veranstaltungen, von denen sie nicht unzufrieden und unwissend nach Hause können.<br><a href="veranstaltungen.html">Erfahren Sie mehr über hier</a></p>
-      </div>  
-    </section>
-
-     <!--section 4 is only social media / insta/ newsletter -->
-
-    <section class="socialmedia">
-      <a href="https://www.instagram.com/">follow us <br> @ instagram</a>
-      <form class="newsletter" action="php/email.php" method="POST">
-        <h4>Newsletter Sign Up</h4>
-        <label for="email">E-Mail Addresse: *</label>
-        <input type="text" id="email" name="email" placeholder="beispiel@beisiel.de" required>
-        <button type="submit" value="Abgeschickt">Abonnieren</button>
-      </form>   
-    </section>
-  </main>
-
-  <!--here we have the footer (the same like the navigation bar)-->
-  <footer>
-    <nav>
-      <ul>
-        <li>&#169; Me & mE</li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="dataschultz.html">Dataschultz</a></li>
-        <li><a href="#top"> &#10595;  Nach oben</a></li>
-      </ul>
-    </nav>
-  </footer>
-  
-</body>
+	</body>
 </html>
